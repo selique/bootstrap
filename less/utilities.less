@@ -2,6 +2,33 @@
 // Utility classes
 // --------------------------------------------------
 
+//== Custom text-align for Responsive Media queries breakpoints 
+// text-left-* & text-right-* with a reset option text-reset-*
+//## Define the text-align-* for your layout will change, and he adapting to different screen sizes.
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.text-reset { text-align: inherit; }
+
+.text-clear { text-align: initial !important; }
+
+@media (min-width: @screen-sm-min) {
+  .text-left-sm  { .text-left !important } 
+  .text-right-sm { .text-right !important }
+  .text-reset-sm { .text-reset !important }
+}
+
+@media (min-width: @screen-md-min) {
+  .text-left-md  { .text-left !important } 
+  .text-right-md { .text-right !important }
+  .text-reset-md { .text-reset !important }
+}
+@media (min-width: @screen-lg-min) {
+  .text-left-lg  { .text-left !important } 
+  .text-right-lg { .text-right !important }
+  .text-reset-lg { .text-reset !important }
+}
 
 // Floats
 // -------------------------
@@ -17,6 +44,35 @@
 }
 .pull-left {
   float: left !important;
+}
+
+//== Custom pull-* for Responsive Media queries breakpoints 
+// pull-right-* & pull-left-* with a reset option pull-reset-*
+//## Define the pull-*-* for your layout will change, and he adapting to different screen sizes.
+.pull-left,
+.pull-left-xs { float: left; }
+
+.pull-right,
+.pull-right-xs { float: right; }
+
+.pull-reset,
+.pull-reset-xs { float: none; }
+
+@media (min-width: @screen-sm-min) {
+  .pull-left-sm  { .pull-left } 
+  .pull-right-sm { .pull-right }
+  .pull-reset-sm { .pull-reset }
+}
+
+@media (min-width: @screen-md-min) {
+  .pull-left-md  { .pull-left } 
+  .pull-right-md { .pull-right }
+  .pull-reset-md { .pull-reset }
+}
+@media (min-width: @screen-lg-min) {
+  .pull-left-lg  { .pull-left } 
+  .pull-right-lg { .pull-right }
+  .pull-reset-lg { .pull-reset }
 }
 
 
